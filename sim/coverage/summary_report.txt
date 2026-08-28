@@ -1,0 +1,93 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /test_bench/dut/u_APB_Slave
+=== Design Unit: work.APB_Slave
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+    Expressions                     10        10         0   100.00%
+    Statements                       8         8         0   100.00%
+    Toggles                          8         8         0   100.00%
+
+=================================================================================
+=== Instance: /test_bench/dut/u_tcr
+=== Design Unit: work.tcr
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        12        12         0   100.00%
+    Conditions                       1         1         0   100.00%
+    Expressions                     22        22         0   100.00%
+    Statements                      18        18         0   100.00%
+    Toggles                        100        48        52    48.00%
+
+=================================================================================
+=== Instance: /test_bench/dut/u_cnt_ctrl
+=== Design Unit: work.cnt_ctrl
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        29        29         0   100.00%
+    Conditions                       1         1         0   100.00%
+    Expressions                     24        24         0   100.00%
+    Statements                      30        30         0   100.00%
+    Toggles                        130        70        60    53.84%
+
+=================================================================================
+=== Instance: /test_bench/dut/u_counter
+=== Design Unit: work.counter
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        57        57         0   100.00%
+    Expressions                     22        22         0   100.00%
+    Statements                      48        48         0   100.00%
+    Toggles                        600       600         0   100.00%
+
+=================================================================================
+=== Instance: /test_bench/dut/u_tcmp
+=== Design Unit: work.tcmp
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        23        23         0   100.00%
+    Expressions                     20        20         0   100.00%
+    Statements                      43        43         0   100.00%
+    Toggles                        468       468         0   100.00%
+
+=================================================================================
+=== Instance: /test_bench/dut/u_interrupt
+=== Design Unit: work.interrupt
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13        13         0   100.00%
+    Expressions                     20        20         0   100.00%
+    Statements                      21        21         0   100.00%
+    Toggles                         88        26        62    29.54%
+
+=================================================================================
+=== Instance: /test_bench/dut
+=== Design Unit: work.timer_top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+    Toggles                        594       420       174    70.70%
+
+=================================================================================
+=== Instance: /test_bench
+=== Design Unit: work.test_bench
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       148        88        60    59.45%
+    Conditions                      83         7        76     8.43%
+    Statements                     462       424        38    91.77%
+    Toggles                        178       168        10    94.38%
+
+
+Total Coverage By Instance (filtered view): 73.38%
+

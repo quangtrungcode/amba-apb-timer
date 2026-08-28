@@ -1,0 +1,41 @@
+# vsim -coverage -l apb_unaligned_chk.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit apb_unaligned_chk.ucdb; log -r /*;run -all" 
+# Start time: 23:53:35 on Aug 28,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit apb_unaligned_chk.ucdb
+#  log -r /*
+# run -all
+# 
+# =======================================================
+# [0] [TEST START] PATTERN: apb_unaligned_chk
+# =======================================================
+# 
+# [35000] [CASE 46] Not aligned access
+# [146000] [PASS] Step 1: Setup TDR0 successful (Data: 12345678).
+# [146000] Step 2: Issuing unaligned write to 0x001...
+# [226000] [PASS] Step 3: Unaligned read securely returned 00000000.
+# [266000] [PASS] Step 4: TDR0 successfully retained original data (12345678).
+# 
+# =======================================================
+# [266000] [TEST SUMMARY] PATTERN: apb_unaligned_chk ---> PASSED
+# =======================================================
+# 
+# ** Note: $finish    : ../tb/test_bench.v(46)
+#    Time: 366 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 23:53:36 on Aug 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

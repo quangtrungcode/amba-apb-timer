@@ -1,0 +1,61 @@
+# vsim -coverage -l interrupt_chk.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit interrupt_chk.ucdb; log -r /*;run -all" 
+# Start time: 23:53:31 on Aug 28,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit interrupt_chk.ucdb
+#  log -r /*
+# run -all
+# 
+# =======================================================
+# [0] [TEST START] PATTERN: interrupt_chk
+# =======================================================
+# 
+# [35000] [CASE 49] interrupt pending: Set condition
+# [2786000] [PASS] ID 49: Pending set correctly, output not asserted.
+# 
+# [2786000] [CASE 50] interrupt pending: Clear condition
+# [5576000] [PASS] ID 50.1: Write 0 ignored.
+# [5656000] [PASS] ID 50.2: Write 1 cleared TISR successfully.
+# 
+# [5656000] [CASE 51] interrupt pending: Manual condition
+# [5846000] [PASS] ID 51: Manual trigger works.
+# 
+# [5846000] [CASE 52] interrupt enable: Set condition
+# [8636000] [PASS] ID 52: Interrupt asserted to output port.
+# 
+# [8636000] [CASE 53] interrupt enable: Clear condition
+# [11466000] [PASS] ID 53.1: Write 0 ignored, output remains asserted.
+# [11546000] [PASS] ID 53.2: Output deasserted successfully.
+# 
+# [11546000] [CASE 54] interrupt enable: Manual condition
+# [11776000] [PASS] ID 54: Manual trigger + Enable works.
+# 
+# [11776000] [CASE 55] Mask condition
+# [14606000] [PASS] ID 55: Interrupt properly masked (tim_int=0, TISR=1).
+# 
+# [14606000] [CASE 56] Once asserted, interrupt must be kept
+# [17436000] [PASS] ID 56: Interrupt state retained correctly.
+# 
+# =======================================================
+# [17436000] [TEST SUMMARY] PATTERN: interrupt_chk ---> PASSED
+# =======================================================
+# 
+# ** Note: $finish    : ../tb/test_bench.v(46)
+#    Time: 17536 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 23:53:32 on Aug 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
