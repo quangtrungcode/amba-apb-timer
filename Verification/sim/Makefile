@@ -36,11 +36,13 @@ wave:
 gen_cov:
 	mkdir -p coverage
 	vcover merge IP.ucdb *.ucdb
+	vsim -c -viewcov IP.ucdb -do "do TrungQuang.do; coverage save IP.ucdb; quit -f"
 	vcover report IP.ucdb -output coverage/summary_report.txt
 	vcover report -zeros -details -code bcesft -annotate -All -codeAll IP.ucdb -output coverage/detail_report.txt
 gen_html:
 	mkdir -p coverage
 	vcover merge IP.ucdb *.ucdb
+	vsim -c -viewcov IP.ucdb -do "do TrungQuang.do; coverage save IP.ucdb; quit -f"
 	vcover report -zeros -details -code bcesft -annotate -testhitdataAll -html IP.ucdb 
 clean:
 	rm -rf work
