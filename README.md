@@ -92,5 +92,4 @@ The IP is divided into 6 modular sub-blocks:
     │   ├── reg_reserved_chk.v          # Reserved address space protection
     │   ├── reg_rst_chk.v               # Reset behavior across register set
     │   └── reg_rw_chk.v                # Read/write functional integrity checks
-    ├── Final_Project-2.xlsx            # Project requirements & tracking matrix
     └── Timer_vplan.xlsx                # Detailed Verification Plan (vPlan)
