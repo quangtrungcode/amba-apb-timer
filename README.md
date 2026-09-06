@@ -114,12 +114,14 @@ All 6 core RTL modules achieved **100.00% code coverage** across all enabled met
 
 ## How to Run Simulation
 
-Navigate to the simulation directory and execute commands via `Makefile`:
+Navigate to the simulation directory:
 
 ```bash
 cd Verification/sim
-
-# 1. # Clean previous build artifacts and logs
+```
+Execute the verification flow step-by-step:
+```
+# 1. Clean previous build artifacts and logs
 make clean
 
 # 2. Run regression test suite with coverage collection enabled
