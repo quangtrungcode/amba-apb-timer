@@ -1,7 +1,7 @@
-../rtl/timer_top.v
-../rtl/APB_Slave.v
-../rtl/tcr.v
-../rtl/cnt_ctrl.v
-../rtl/counter.v
-../rtl/tcmp.v
-../rtl/interrupt.v
+../../Design/rtl/timer_top.v
+../../Design/rtl/APB_Slave.v
+../../Design/rtl/tcr.v
+../../Design/rtl/cnt_ctrl.v
+../../Design/rtl/counter.v
+../../Design/rtl/tcmp.v
+../../Design/rtl/interrupt.v
