@@ -70,6 +70,7 @@ The IP is divided into 6 modular sub-blocks:
     │   │   └── summary_report.txt
     │   ├── log/                        # Simulation run logs
     │   ├── Makefile                    # Automation build script
+    │   ├── regress_summary.py          # Parses simulation logs and extracts DUT coverage
     │   ├── compile.f, rtl.f, tb.f      # Compilation file lists
     │   ├── pat.list                    # Regression test suite list
     │   ├── run.csh, report.csh         # Shell automation scripts
