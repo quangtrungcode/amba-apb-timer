@@ -13,7 +13,7 @@ COV_RE = re.compile(r"^\s*([A-Za-z][A-Za-z ]*?)\s+(\d+)\s+(\d+)\s+(\d+)\s+([\d.]
 
 def parse_log(path):
     name, result = path.stem, "NO_RESULT"
-    errors = warnings = "N/A"  # Đổi None thành "N/A" để bảng report gọn gàng hơn nếu log bị crash
+    errors = warnings = "N/A"
     with open(path, encoding="utf-8", errors="ignore") as f:
         for line in f:
             m = SUMMARY_RE.search(line)
@@ -33,12 +33,11 @@ def parse_coverage(path):
             m = INST_RE.search(line)
             if m:
                 current_inst = m.group(1)
-                # Chỉ lọc các instance thuộc khối DUT[cite: 4, 5]
                 if current_inst.startswith("/test_bench/dut"):
                     inst = current_inst
                     data[inst] = {}
                 else:
-                    inst = None  # Reset lại inst để không vô tình gom data của testbench
+                    inst = None  
                 continue
             
             m = COV_RE.match(line)
